@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/98466ce3-0685-49b9-bedc-23d5acf4ce7f/deploy-status)](https://app.netlify.com/sites/recipesbook/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05d160e3-2b9d-4344-9f39-839e306a439c/deploy-status)](https://app.netlify.com/sites/lucas-recipes/deploys)
 
 ### local server
 
