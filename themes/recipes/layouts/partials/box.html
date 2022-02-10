@@ -7,7 +7,10 @@
     {{ end }}
     <div>
       <div>{{ .Title }}</div>
-      <small class="has-text-grey">{{ .Summary }}</small>
+                {{ with .Params.Summary }}
+      <small class="has-text-grey">{{ . }}</small>
+                {{ end }}
+
     </div>
   </div>
   <div style="margin-top: 0.5em;">

@@ -8,19 +8,18 @@
           <img alt="{{ . }}" class="is-rounded" src="{{ . }}" />
         </figure>
         {{ end }}
-        <div class="is-flex is-align-items-center">
+        <div class="">
       
           <h1 class="title is-1">
             {{ .Title }}
           </h1>
-         {{ with .Params.Summary }}
+          {{ with .Params.Summary }}
           <h6 class="subtitle is-6">
             {{ . }}
           </h6>
-        {{ end }}
-            </div>
-
+          {{ end }}
         </div>
+
       </div>
       <div style="margin-top: 1em;">
         <span class="tag is-large is-primary is-light">{{ .Params.Time }}</span>
