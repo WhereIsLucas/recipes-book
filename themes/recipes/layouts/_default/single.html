@@ -8,17 +8,25 @@
           <img alt="{{ . }}" class="is-rounded" src="{{ . }}" />
         </figure>
         {{ end }}
-        <div>
+        <div class="is-flex is-align-items-center">
+      
           <h1 class="title is-1">
             {{ .Title }}
           </h1>
+         {{ with .Params.Summary }}
           <h6 class="subtitle is-6">
-            {{ .Summary }}
+            {{ . }}
           </h6>
+        {{ end }}
+            </div>
+
         </div>
       </div>
       <div style="margin-top: 1em;">
-        <span class="tag is-primary is-light">{{ .Params.Time }}</span>
+        <span class="tag is-large is-primary is-light">{{ .Params.Time }}</span>
+        <span class="tag is-large is-info is-light">{{ .Params.Level }} <i class="fa fa-star"></i></span>
+      </div>
+      <div style="margin-top: 1em;">
         {{ range .Params.Tags }}
         <a class="tag" href="/tags/{{ . }}">{{ . }}</a>
         {{ end }}
