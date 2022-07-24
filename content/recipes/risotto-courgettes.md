@@ -1,7 +1,5 @@
 ---
 title: "Risotto aux Courgettes"
-description: "Risotto aux Courgettes"
-summary: "Risotto aux Courgettes"
 date: 2019-11-13T08:11:45-05:00
 draft: false
 time: "35m"

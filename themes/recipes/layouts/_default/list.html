@@ -1,28 +1,28 @@
 {{ define "main" }}.
 <section class="section">
   <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-half">
+    <div class="row text-center">
+      <div class="col-6">
         <h3 class="title">{{ humanize .Page.Title }}</h3>
       </div>
     </div>
-    <div class="columns is-centered">
-      <div class="column">
+    <div class="row justify-content-center">
+      <div class="col-md">
         {{ range $index, $page := .Pages }}
           {{ if eq (mod $index 4) 0 }}{{ partial "box.html" $page }}{{ end }}
         {{ end }}
       </div>
-      <div class="column">
+      <div class="col-md">
         {{ range $index, $page := .Pages }}
           {{ if eq (mod $index 4) 1 }}{{ partial "box.html" $page }}{{ end }}
         {{ end }}
       </div>
-      <div class="column">
+      <div class="col-md">
         {{ range $index, $page := .Pages }}
           {{ if eq (mod $index 4) 2 }}{{ partial "box.html" $page }}{{ end }}
         {{ end }}
       </div>
-      <div class="column">
+      <div class="col-md">
         {{ range $index, $page := .Pages }}
           {{ if eq (mod $index 4) 3 }}{{ partial "box.html" $page }}{{ end }}
         {{ end }}
