@@ -4,7 +4,7 @@ date: 2019-11-13T08:11:45-05:00
 draft: false
 time: "35m"
 tags: ["italien", "riz"]
-featured_image: "/images/risotto-courgettes.jpg"
+unsplash_image: "qIPRTMulc-g"
 ---
 
 ## Ingrédients

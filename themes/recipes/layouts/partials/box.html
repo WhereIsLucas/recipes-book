@@ -1,6 +1,8 @@
 <div class="card">
-  {{ with .Params.featured_image }}
-  <img src="{{ . }}" class="card-img-top" alt="">
+  {{ with .Params.unsplash_image }}
+  <img src="https://source.unsplash.com/{{ . }}/640x360" class="card-img-top" alt="">
+  {{ else }}
+  <img src="/images/food-placeholder.jpg" class="card-img-top" alt="">
   {{ end }}
   <div class="card-body">
     <a href="{{ .Permalink }}">

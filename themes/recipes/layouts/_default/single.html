@@ -1,12 +1,22 @@
 {{ define "main" }}
 <div class="section">
+    {{ $img := "/images/food-placeholder.jpg" }}
+    {{ with .Params.unsplash_image }}
+    {{ $unsplashId := .  }}
+    {{ $img = (print "https://source.unsplash.com/" $unsplashId "/1920x1080") }}
+    {{ end }}
     <article>
         <header>
             <div>
                 <div class="w-100 py-5"
-                     style="background:url('{{ .Params.featured_image }}') center center; background-size: cover;">
+                     style="    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('{{ $img }}');
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;">
                     <div class="py-5 text-center">
-                        <h1> {{ .Title }}</h1>
+                        <h1 class="text-white" style="text-shadow: #303030 1px 0 10px;"> {{ .Title }}</h1>
                         <div style="margin-top: 1em;">
                             <span class="bg-secondary badge rounded-pill text-decoration-none">{{ .Params.Time }}</span>
                             {{ range .Params.Tags }}
